@@ -17,18 +17,22 @@ These are the two meme that I often use, representing sad and happy feelings. I 
 library(magick)
 
 #picture one
+
 Smile_praise <- image_read("https://www.meme-arsenal.com/memes/fdc79d5250a627ce8357fdf0e3a9f79b.jpg") %>%
   image_scale(300)
 
 #picture two
+
 Crying_hug <- image_read("https://www.meme-arsenal.com/memes/12710ab699636c88c7f4d570284fd0cb.jpg") %>%
   image_scale(300)
 
 #text_square one
+
 meme_text1 <- image_blank(width = 500, height = 500, color = "#99ff33") %>%
   image_annotate(text = " Smile and say you are great!", color = "#ff471a", size = 30, font = "Segoe Print", gravity = "center")
 
 #text_square one
+
 meme_text2 <- image_blank(width = 500, height = 500, color = "#99ff33") %>%
   image_annotate(text = "Can you hug me when I am sad?", color = "#ff471a", size = 30, font = "Segoe Print", gravity = "center")
 
