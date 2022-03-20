@@ -14,6 +14,7 @@ These are the two meme that I often use, representing sad and happy feelings. I 
 ## Provide the R code I used to make the meme! 
 
 '''
+
 library(magick)
 
 #picture one
@@ -48,4 +49,5 @@ meme <- c(first_row, second_row) %>%
 print(meme)
 
 image_write(meme, "my_meme.png")
+
 '''
